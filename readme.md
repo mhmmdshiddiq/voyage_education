@@ -25,16 +25,16 @@ Aplikasi ini juga menyediakan informasi pendidikan terkait dengan karier yang di
    - Setelah menyelesaikan tes, siswa dapat melihat hasil dan rekomendasi karier yang sesuai dengan profil mereka.
 
 ## Kontribusi Tim Pengembang
-# Machine Learning Team
+### Machine Learning Team
 - Firdaus Nuur Rhamadhan(M446BSY1157)
 - Syah Rizan Nazri Muhammad (M312BSY1285)
 - Tulus Toto Raharjo (M312BSY1360)
 
-# Cloud Computing Team
+### Cloud Computing Team
 - Muhammad Shiddiq Wicahyo (C015BSY3129)
 - Wahyu Ariyadi (C312BSY3972)
 
-# Mobile Development Team
+### Mobile Development Team
 - Ardianto Ramadhan (A008BSY2978)
 - Mustika Jagad Gumelar (A463BSY2920)
 
