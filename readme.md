@@ -1,3 +1,4 @@
+![Logo1](https://github.com/mhmmdshiddiq/voyage_education/assets/114437804/37cee9b7-9ebc-476e-8907-5da91a43604b)
 # VoyEdu (Voyage Education)
 
 VoyEdu adalah aplikasi yang bertujuan membantu siswa-siswi SMA/SMK dalam menentukan masa depan mereka dengan memberikan rekomendasi berdasarkan kemampuan mereka. Aplikasi ini menyediakan tes klasifikasi menggunakan kecerdasan buatan (AI) untuk membantu mengidentifikasi potensi dan minat siswa.
