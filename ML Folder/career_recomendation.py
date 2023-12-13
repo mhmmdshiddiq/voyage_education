@@ -46,7 +46,7 @@ model.fit(X_train_normalized, y_train, epochs=50, batch_size=2, validation_data=
 Tes Input nilai user baru
 """
 
-new_user_data = np.array([4, 3, 2, 2, 5, 2, 2, 2]).reshape(1, -1)
+new_user_data = np.array([4, 4, 4, 2, 2, 5, 5, 5]).reshape(1, -1)
 
 new_user_data_normalized = scaler.transform(new_user_data)
 
