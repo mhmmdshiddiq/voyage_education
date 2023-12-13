@@ -24,7 +24,7 @@ array_length = 8
 values = [1, 2, 3, 4]
 
 # Number of positions to fill with 5
-num_positions_5 = 4
+num_positions_5 = 7
 
 # Generate all combinations of positions for the value 5
 positions_combinations = list(combinations(range(array_length), num_positions_5))
