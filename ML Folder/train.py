@@ -21,7 +21,7 @@ def create_and_train_model(X_train, y_train_encoded, X_test, y_test_encoded):
     return model
 
 # Baca data dari file CSV
-data_df = pd.read_csv('sample.csv')
+data_df = pd.read_csv('data_tes_career.csv')
 
 # Pisahkan data menjadi fitur (X) dan label (y)
 X = data_df.drop('Career Recommendation', axis=1)
