@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Voyage Education</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="welcome_text">Selamat Datang !!</string>
+    <string name="name_user">Mustika Jagad Gumelar</string>
+    <string name="voyage_education">Voyage Education</string>
+    <string name="start">Start</string>
+    <string name="karier">Ayo Mulai Ketahui Karirmu Disini!!</string>
+    <string name="prequiz_text">"Kuis ini bertujuan untuk mengetahui potensi yang ada dalam diri anda. maka dari itu mohon kerjakan dengan sungguh sungguh dan jujur. \n\nKuis ini terdiri dari 40 soal pilihan ganda "</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="title_prequiz">Prequiz</string>
+    <string name="title_app">VOYAGE EDUCATION</string>
+    <string name="quiz_here">Quiznya nanti disini</string>
+    <string name="hasil">Hasil</string>
+    <string name="title_quiz">Quiz</string>
+    <string name="hasil_rekomendasi">Hasil dari kuis yang telah anda kerjakan masuk dalam kecerdasan:</string>
+    <string name="merekomendasikan">Maka dari itu kami merekomendasikan anda mengambil profesi:</string>
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="option3">Option 3</string>
+    <string name="option4">Option 4</string>
+
+</resources>
