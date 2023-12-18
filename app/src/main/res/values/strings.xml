@@ -22,5 +22,9 @@
     <string name="option2">Option 2</string>
     <string name="option3">Option 3</string>
     <string name="option4">Option 4</string>
+    <string name="logindisini">Silahkan Login Disini</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Silahkan Register Disini</string>
 
 </resources>

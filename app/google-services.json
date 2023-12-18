@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "164761863791",
+    "project_id": "voyage-education",
+    "storage_bucket": "voyage-education.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164761863791:android:ccdcb271138ef9492def9a",
+        "android_client_info": {
+          "package_name": "com.dicoding.voyageeducation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHN-jfoLPJUKcamOiapxItbmFLMkdocWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
