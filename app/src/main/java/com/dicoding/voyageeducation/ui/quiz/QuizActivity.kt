@@ -48,7 +48,6 @@ class QuizActivity : AppCompatActivity() {
             // Clear radio group selection
             binding.optionsRadioGroup.clearCheck()
         } else {
-            // All quizzes have been answered
             showResult()
         }
     }
@@ -71,7 +70,6 @@ class QuizActivity : AppCompatActivity() {
             currentQuizIndex++
             displayCurrentQuiz()
         } else {
-            // No option selected
             Toast.makeText(this, "Pilih jawaban terlebih dahulu", Toast.LENGTH_SHORT).show()
         }
     }

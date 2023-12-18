@@ -3,6 +3,7 @@ package com.dicoding.voyageeducation.ui.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
 import android.widget.Toast
 import com.dicoding.voyageeducation.R
@@ -29,28 +30,24 @@ class RegisterActivity : AppCompatActivity() {
             val email = binding.edtEmailRegister.text.toString()
             val password = binding.edtPasswordRegister.text.toString()
 
-            //Validasi email
             if (email.isEmpty()) {
                 binding.edtEmailRegister.error = "Email Harus Diisi"
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
-            //Validasi email tidak sesuai
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 binding.edtEmailRegister.error = "Email Tidak Valid"
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
-            //Validasi password
             if (password.isEmpty()) {
                 binding.edtPasswordRegister.error = "Password Harus Diisi"
                 binding.edtPasswordRegister.requestFocus()
                 return@setOnClickListener
             }
 
-            //Validasi panjang password
             if (password.length < 6) {
                 binding.edtPasswordRegister.error = "Password Minimal 6 Karakter"
                 binding.edtPasswordRegister.requestFocus()
@@ -59,6 +56,8 @@ class RegisterActivity : AppCompatActivity() {
 
             RegisterFirebase(email, password)
         }
+
+        binding.edtPasswordRegister.transformationMethod = PasswordTransformationMethod.getInstance()
     }
 
     private fun RegisterFirebase(email: String, password: String) {

@@ -22,7 +22,6 @@ class HasilAcivity : AppCompatActivity() {
         val score = intent.getIntExtra("SCORE", 0)
         binding.tvScore.text = "$score"
 
-        // Mendapatkan skor kategori dari Intent
         val categoryScores =
             intent.getSerializableExtra("CATEGORY_SCORES") as? Map<String, Int> ?: emptyMap()
         val resultType = getResultType(categoryScores)
@@ -30,7 +29,6 @@ class HasilAcivity : AppCompatActivity() {
     }
 
     private fun getResultType(categoryScores: Map<String, Int>): String {
-        // Menentukan kategori dengan jawaban benar paling banyak
         var maxType = ""
         var maxCount = 0
 
