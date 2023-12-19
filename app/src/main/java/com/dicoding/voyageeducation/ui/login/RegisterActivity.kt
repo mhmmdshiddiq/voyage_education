@@ -31,25 +31,25 @@ class RegisterActivity : AppCompatActivity() {
             val password = binding.edtPasswordRegister.text.toString()
 
             if (email.isEmpty()) {
-                binding.edtEmailRegister.error = "Email Harus Diisi"
+                binding.edtEmailRegister.error = getString(R.string.email_harus_diisi)
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                binding.edtEmailRegister.error = "Email Tidak Valid"
+                binding.edtEmailRegister.error = getString(R.string.email_tidak_valid)
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.isEmpty()) {
-                binding.edtPasswordRegister.error = "Password Harus Diisi"
+                binding.edtPasswordRegister.error = getString(R.string.password_harus_diisi)
                 binding.edtPasswordRegister.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.length < 6) {
-                binding.edtPasswordRegister.error = "Password Minimal 6 Karakter"
+                binding.edtPasswordRegister.error = getString(R.string.minim_password)
                 binding.edtPasswordRegister.requestFocus()
                 return@setOnClickListener
             }

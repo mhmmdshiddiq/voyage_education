@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.dicoding.voyageeducation.R
 import com.dicoding.voyageeducation.databinding.FragmentHomeBinding
@@ -23,13 +24,14 @@ class HomeFragment : Fragment() {
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
         return root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btnStart = view.findViewById(R.id.start_button)
 
+        btnStart = view.findViewById(R.id.start_button)
         btnStart.setOnClickListener {
             val intent = Intent(requireContext(), PrequizActivity::class.java)
             startActivity(intent)

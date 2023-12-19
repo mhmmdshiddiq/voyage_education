@@ -22,6 +22,13 @@ class LoginActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+        if (auth.currentUser != null) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+            return
+        }
+
         binding.tvToRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
@@ -31,25 +38,25 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.edtEmailLogin.text.toString()
             val password = binding.edtPasswordLogin.text.toString()
 
-            if (email.isEmpty()){
-                binding.edtEmailLogin.error = "Email Harus Diisi"
+            if (email.isEmpty()) {
+                binding.edtEmailLogin.error = getString(R.string.email_harus_diisi)
                 binding.edtEmailLogin.requestFocus()
                 return@setOnClickListener
             }
 
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                binding.edtPasswordLogin.error = "Email Tidak Valid"
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                binding.edtPasswordLogin.error = getString(R.string.email_tidak_valid)
                 binding.edtPasswordLogin.requestFocus()
                 return@setOnClickListener
             }
 
-            if (password.isEmpty()){
-                binding.edtPasswordLogin.error = "Password Harus Diisi"
+            if (password.isEmpty()) {
+                binding.edtPasswordLogin.error = getString(R.string.password_harus_diisi)
                 binding.edtPasswordLogin.requestFocus()
                 return@setOnClickListener
             }
 
-            LoginFirebase(email,password)
+            LoginFirebase(email, password)
         }
 
         binding.edtPasswordLogin.transformationMethod = PasswordTransformationMethod.getInstance()
@@ -62,6 +69,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Selamat datang $email", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 } else {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }

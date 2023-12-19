@@ -26,5 +26,11 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Silahkan Register Disini</string>
+    <string name="logout">Logout</string>
+    <string name="confirm_logout">Apakah anda yakin ingin keluar?</string>
+    <string name="email_harus_diisi">Email Harus Diisi</string>
+    <string name="email_tidak_valid">Email Tidak Valid</string>
+    <string name="password_harus_diisi">Password Harus Diisi</string>
+    <string name="minim_password">Minimal password 8 karakter!!</string>
 
 </resources>
