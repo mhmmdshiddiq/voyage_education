@@ -25,7 +25,9 @@ class PrequizActivity : AppCompatActivity(),View.OnClickListener {
         when (v?.id) {
             R.id.btn_start_quiz -> {
                 val moveIntent = Intent(this@PrequizActivity, QuizActivity::class.java)
+                moveIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
                 startActivity(moveIntent)
+                finish()
             }
         }
     }
@@ -34,6 +36,4 @@ class PrequizActivity : AppCompatActivity(),View.OnClickListener {
         onBackPressed()
         return true
     }
-
-
 }

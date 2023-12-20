@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.RadioButton
 import android.widget.Toast
 import com.dicoding.voyageeducation.R
-import com.dicoding.voyageeducation.data.FakeData
+import com.dicoding.voyageeducation.data.QuizData
 import com.dicoding.voyageeducation.databinding.ActivityQuizBinding
 import com.dicoding.voyageeducation.ui.hasil.HasilAcivity
 import java.io.Serializable
@@ -24,7 +24,6 @@ class QuizActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar!!.title = getString(R.string.title_quiz)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         binding.submitButton.setOnClickListener {
             checkAnswer()
@@ -34,8 +33,8 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private fun displayCurrentQuiz() {
-        if (currentQuizIndex < FakeData.quizList.size) {
-            val currentQuiz = FakeData.quizList[currentQuizIndex]
+        if (currentQuizIndex < QuizData.quizList.size) {
+            val currentQuiz = QuizData.quizList[currentQuizIndex]
 
             binding.tvNumber.text = currentQuiz.id.toString()
             binding.tvJenisPertanyaan.text = currentQuiz.typeQuestion
@@ -57,7 +56,7 @@ class QuizActivity : AppCompatActivity() {
 
         if (selectedOptionId != -1) {
             val selectedOption = findViewById<RadioButton>(selectedOptionId).text.toString()
-            val currentQuiz = FakeData.quizList[currentQuizIndex]
+            val currentQuiz = QuizData.quizList[currentQuizIndex]
 
             if (selectedOption == currentQuiz.correctOption) {
                 // Correct answer
@@ -79,11 +78,7 @@ class QuizActivity : AppCompatActivity() {
         val intent = Intent(this@QuizActivity, HasilAcivity::class.java)
         intent.putExtra("SCORE", score)
         intent.putExtra("CATEGORY_SCORES", categoryScores as Serializable)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 }

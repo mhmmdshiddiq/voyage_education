@@ -151,26 +151,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="110dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="32dp"
+                android:id="@+id/tv_profesi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Dokter"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.485" />
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="41dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_next"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -194,26 +186,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="110dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="32dp"
+                android:id="@+id/tv_profesi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Guru"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.485" />
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="41dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_next"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -236,26 +220,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="110dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="32dp"
+                android:id="@+id/tv_profesi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Arsitek"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.485" />
-
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="41dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_next"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -19,6 +19,8 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = "Register"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         auth = FirebaseAuth.getInstance()
 
         binding.tvToLogin.setOnClickListener {
@@ -71,5 +73,10 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
