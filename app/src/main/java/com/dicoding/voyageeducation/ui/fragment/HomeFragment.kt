@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.app.ActivityOptionsCompat
 import androidx.fragment.app.Fragment
 import com.dicoding.voyageeducation.R
 import com.dicoding.voyageeducation.databinding.FragmentHomeBinding
@@ -33,7 +34,12 @@ class HomeFragment : Fragment() {
         btnStart = view.findViewById(R.id.start_button)
         btnStart.setOnClickListener {
             val intent = Intent(requireContext(), PrequizActivity::class.java)
-            startActivity(intent)
+            val options = ActivityOptionsCompat.makeCustomAnimation(
+                requireContext(),
+                R.anim.fade_in,
+                R.anim.fade_out
+            )
+            startActivity(intent, options.toBundle())
         }
     }
 

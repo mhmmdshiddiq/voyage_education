@@ -11,11 +11,11 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/navigation_history"
-        android:name="com.dicoding.voyageeducation.ui.fragment.HistoryFragment"
-        android:label="@string/title_history"
-        tools:layout="@layout/fragment_history" />
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_history"-->
+<!--        android:name="com.dicoding.voyageeducation.ui.fragment.HistoryFragment"-->
+<!--        android:label="@string/title_history"-->
+<!--        tools:layout="@layout/fragment_history" />-->
 
     <fragment
         android:id="@+id/navigation_profile"
