@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify, request
 import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
